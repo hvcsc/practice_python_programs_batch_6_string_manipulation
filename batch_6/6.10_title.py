@@ -3,5 +3,13 @@ And all other letter in small case. Create a program that do the same functional
 without using title() function."""
 
 #define capitalization
+def title(string):
+    words = string.split()
+    titled = [word.capitalize() for word in words]
+    return " ".join(titled)
+
 #ask input
+user = title(input("Enter a string: "))
+
 #print output
+print(user)
