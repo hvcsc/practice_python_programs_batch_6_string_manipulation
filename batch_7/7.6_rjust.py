@@ -3,5 +3,12 @@ of characters specifies in function parameter. Create a program that do the same
 without using rjust() function."""
 
 #define rjust
+def r_just(string, width):
+    return " " * (width - len(string)) + string
+
 #ask input
+string = input("Enter string: ")
+width = int(input("Enter width: "))
+
 #print output
+print(r_just(string, width))
