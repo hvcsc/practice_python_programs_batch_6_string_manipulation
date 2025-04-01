@@ -6,7 +6,8 @@ user = input("Enter a string: ")
 find = input("Enter the character to find: ")
 
 #check first location
-position = user.find(find)
-
-#print location
-print(f"\nPosition of {find}: {position}")
+try:
+    position = user.index(find)
+    print(f"\nPosition of '{find}': {position}")
+except ValueError:
+    print("Not found")
