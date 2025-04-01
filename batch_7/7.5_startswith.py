@@ -2,5 +2,11 @@
 Create a program that do the same functionality without using startswith() function."""
 
 #ask input
+string = input("Enter string: ")
+start = input("Enter prefix: ")
+
 #check conditions
-#print output
+if string[:len(start)] == start:
+    print("True")
+else:
+    print("False")
